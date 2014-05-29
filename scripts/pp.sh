@@ -8,11 +8,8 @@ mkdir -p ${STORAGEDIR}
 
 if [[ "$OSTYPE" =~ ^darwin ]]
 then
-   echo "I'm on a mac!"
-   echo `pwd`
    /usr/bin/curl -o ${STORAGEDIR}/pinkpony.jpg https://raw.githubusercontent.com/pinkponybrigade/pp/master/assets/pinkpony.jpg
    /usr/bin/curl -o ${PWD}/wallpaper.applescript https://raw.githubusercontent.com/pinkponybrigade/pp/master/scripts/wallpaper.applescript
-   echo `ls`
    osascript ${PWD}/wallpaper.applescript ${PPONY}
 fi
 
